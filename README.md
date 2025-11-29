@@ -2,6 +2,18 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+### Environment Variables
+
+Create a `.env.local` file in the root directory with the following:
+
+```env
+ADMIN_PASSWORD=your_secure_password_here
+```
+
+This password is required to access the blog upload functionality. The default password is `admin123` if not set.
+
+### Development Server
+
 First, run the development server:
 
 ```bash
@@ -17,6 +29,13 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+## Features
+
+- **Portfolio Site**: Modern, responsive portfolio with sections for About, Skills, Projects, Experience, and Contact
+- **Blog System**: Upload Word documents (.docx) that are automatically converted to blog posts
+- **Admin Authentication**: Secure admin login required to upload blog posts
+- **Dark Mode**: Full dark mode support throughout the site
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
